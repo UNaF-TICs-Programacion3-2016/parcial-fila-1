@@ -1,2 +1,2 @@
 d:\heber\documents\visual studio 2012\Projects\ParcialFila1-2016\ParcialFila1-2016\bin\Debug\ParcialFila1-2016.exe.config
-D:\Heber\Documents\Visual Studio 2015\Repos\parcial-fila-1\ParcialFila1-2016\bin\Debug\ParcialFila1-2016.exe.config
+C:\Users\Joel Britez\Source\Repos\parcial-fila-1\ParcialFila1-2016\bin\Debug\ParcialFila1-2016.exe.config
