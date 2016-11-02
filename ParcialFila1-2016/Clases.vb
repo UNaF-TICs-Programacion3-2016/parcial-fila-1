@@ -1,115 +1,142 @@
 ﻿Imports Oracle.DataAccess.Client
-
 Public MustInherit Class Figuras
-    'Viendo los atributos que tiene en comun las Clases hijas los nombre en la clase padre...Son los lados,Perimetro,Area
-    'Podria haber hecho lo mismo con los Property pero en la consigna dice para cada clase
-    Protected Perimetro As Double
-    Protected Area As Double
-    Protected Lado_A, Lado_B, Lado_C As Double
-    Public MustOverride Function CalcularArea() As Double
-    Public MustOverride Function CalcularSemiperiodo() As Double
+    Public MustOverride Function Perimetro() As Double
+    Public MustOverride Function Area() As Double
+
+End Class
+
+Public Class Rectangulo
+    Inherits Figuras
+    Private vAltura As Double
+    Private vBase As Double
+    Public Property Altura() As Double
+        Get
+            Return vAltura
+        End Get
+        Set(value As Double)
+            vAltura = value
+        End Set
+    End Property
+    Public Property Base() As Double
+        Get
+            Return vBase
+        End Get
+        Set(value As Double)
+            vBase = value
+        End Set
+    End Property
+
+    Public Overrides Function Perimetro() As Double
+        Return (2 * Base + 2 * Altura)
+    End Function
+
+    Public Overrides Function Area() As Double
+        Return (Base * Altura) / 2
+    End Function
+
+End Class
+
+Public Class Cuadrado
+    Inherits Figuras
+    Private vLado As Double
+
+    Public Property Lado() As Double
+        Get
+            Return vLado
+        End Get
+        Set(value As Double)
+            vLado = value
+        End Set
+    End Property
+
+    Public Overrides Function Perimetro() As Double
+        Return 4 * Lado
+    End Function
+
+    Public Overrides Function Area() As Double
+        Return Math.Pow(Lado, 2)
+    End Function
 End Class
 
 Public Class Triangulo
     Inherits Figuras
-    'Metodos de Acceso a los atributos
-    Public WriteOnly Property IngresarLadoA() As Double
-        Set(ByVal value As Double)
-            Lado_A = value
+    Private vLadoA As Double
+    Private vLadoB As Double
+    Private vLadoC As Double
+
+    Public Property LadoA() As Double
+        Get
+            Return vLadoA
+        End Get
+        Set(value As Double)
+            vLadoA = value
         End Set
     End Property
-    Public WriteOnly Property IngresarLadoB() As Double
-        Set(ByVal value As Double)
-            Lado_B = value
+
+    Public Property LadoB() As Double
+        Get
+            Return vLadoB
+        End Get
+        Set(value As Double)
+            vLadoB = value
         End Set
     End Property
-    Public WriteOnly Property IngresarLadoC() As Double
-        Set(ByVal value As Double)
-            Lado_C = value
+
+    Public Property LadoC() As Double
+        Get
+            Return vLadoC
+        End Get
+        Set(value As Double)
+            vLadoC = value
         End Set
     End Property
-    'Sobrecarga Del Constructor
-    Public Sub New()
+
+    Public Overrides Function Area() As Double
+        Dim S As Double
+        S = (LadoA + LadoB + LadoC) / 2
+        Return Math.Sqrt(S * ((S - LadoA) * (S - LadoB) * (S - LadoC)))
+    End Function
+
+    Public Overrides Function Perimetro() As Double
+        Return (LadoA + LadoB + LadoC)
+    End Function
+
+    Sub New()
 
     End Sub
-    Public Sub New(LadoA As Double, LadoB As Double, LadoC As Double)
-        Lado_A = LadoA
-        Lado_B = LadoB
-        Lado_C = LadoC
+
+    Sub New(a As Double, b As Double, c As Double)
+        LadoA = a
+        LadoB = b
+        LadoC = c
     End Sub
-    'Fin de la sobrecarga
-
-    'Metodos Heredados
-    Public Overrides Function CalcularArea() As Double
-        Area = (Perimetro * (Perimetro - Lado_A) * (Perimetro - Lado_B) * (Perimetro - Lado_C))
-        Return Math.Sqrt(Area)
-    End Function
-    Public Overrides Function CalcularSemiperiodo() As Double
-        Perimetro = (Lado_A + Lado_B + Lado_C) / 2
-        Return Perimetro
-    End Function
-    'Metodos Propios
-    Public Function MostrarArea() As String
-        Return ("Area = " + CalcularArea().ToString)
-    End Function
-    Public Function MostrarPerimetro() As String
-        Return ("Perimetro = " + CalcularSemiperiodo().ToString)
-    End Function
 End Class
-Public Class Rectangulo
-    Inherits Figuras
-    'Metodos de Acceso a los atributos
 
-    Public WriteOnly Property IngresarLadoA() As Double
-        Set(ByVal value As Double)
-            Lado_A = value
-        End Set
-    End Property
-    Public WriteOnly Property IngresarLadoB() As Double
-        Set(ByVal value As Double)
-            Lado_B = value
-        End Set
-    End Property
-    'Metodos Heredados
-    Public Overrides Function CalcularSemiperiodo() As Double
-        Return 2 * (Lado_A + Lado_B)
-    End Function
-    Public Overrides Function CalcularArea() As Double
-        Return (Lado_A * Lado_B)
-    End Function
-End Class
-Public Class Cuadrado
-
-    Inherits Figuras
-    'Medoto de Acceso a los atributos
-    Public WriteOnly Property IngresarLadoA() As Double
-        Set(ByVal value As Double)
-            Lado_A = value
-        End Set
-    End Property
-    'Metodos Heredados
-    Public Overrides Function CalcularSemiperiodo() As Double
-        Return 4 * Lado_A
-    End Function
-    Public Overrides Function CalcularArea() As Double
-        Return Math.Pow(Lado_A, 2)
-    End Function
-
-End Class
 
 Public Class EntornoDB
 
-    Private Conexion As New OracleConnection
+    Private Conn As New OracleConnection
+
+    Public Sub New()
+        Conexion.ConnectionString = "Data Source=localhost;" _
+                                        + "User Id=SYSTEM;" _
+                                        + "Password=123456;"
+    End Sub
+
+    Public ReadOnly Property Conexion As OracleConnection
+        Get
+            Return Conn
+        End Get
+    End Property
+
     Private Sub Conectar()
         Try
-            Conexion.ConnectionString = "Data Source= 192.168.0.106;" _
-                                        + "User Id=JOEL;" _
-                                        + "Password=jjbm5526;"
             Conexion.Open()
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
     End Sub
+
     Private Sub Desconectar()
         Try
             Conexion.Close()
@@ -117,19 +144,25 @@ Public Class EntornoDB
             MsgBox(ex.Message)
         End Try
     End Sub
-    Public Function ObtenerDatosDesdeSQL(SenteciaSQL) As DataTable
-        Dim InmuebleDS As New DataSet
-        Dim Adaptador As New OracleDataAdapter(SenteciaSQL, Conexion)
+
+    Public Function ObtenerDatosDesdeSQL(SQL As String) As DataTable
+
+        Dim Inmueble As New DataSet
         Dim Tabla As New DataTable
-        Try
-            Conectar()
-            Adaptador.Fill(InmuebleDS, "Inmueble")
-            Tabla = InmuebleDS.Tables("Inmueble")
-            Desconectar()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+        Dim Adaptador As New OracleDataAdapter(SQL, Conexion)
+
+        Conectar()
+
+        Adaptador.Fill(Inmueble, "inmueble")
+
+        Desconectar()
+
+        Tabla = Inmueble.Tables("inmueble")
+
         Return Tabla
+
+
+
     End Function
 
 End Class

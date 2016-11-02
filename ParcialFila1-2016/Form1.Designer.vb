@@ -22,121 +22,199 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.CmdCargar = New System.Windows.Forms.Button()
-        Me.TxtC = New System.Windows.Forms.TextBox()
-        Me.TxtB = New System.Windows.Forms.TextBox()
-        Me.TxtA = New System.Windows.Forms.TextBox()
-        Me.CmdMostrar = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtLadoA = New System.Windows.Forms.TextBox()
+        Me.txtLadoB = New System.Windows.Forms.TextBox()
+        Me.txtLadoC = New System.Windows.Forms.TextBox()
+        Me.btnTriangulo = New System.Windows.Forms.Button()
+        Me.btnFiguras = New System.Windows.Forms.Button()
+        Me.txtAltura = New System.Windows.Forms.TextBox()
+        Me.txtBase = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtLado = New System.Windows.Forms.TextBox()
+        Me.btnRegistros = New System.Windows.Forms.Button()
+        Me.btnSalir = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(37, 28)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(206, 16)
-        Me.Label4.TabIndex = 17
-        Me.Label4.Text = "Calculo De Area Y Perimetro"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(63, 132)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 13)
-        Me.Label3.TabIndex = 16
-        Me.Label3.Text = "Lado C"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(63, 106)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(41, 13)
-        Me.Label2.TabIndex = 15
-        Me.Label2.Text = "Lado B"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(63, 80)
+        Me.Label1.Location = New System.Drawing.Point(288, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(41, 13)
-        Me.Label1.TabIndex = 14
+        Me.Label1.TabIndex = 0
         Me.Label1.Text = "Lado A"
         '
-        'CmdCargar
+        'Label2
         '
-        Me.CmdCargar.Location = New System.Drawing.Point(153, 192)
-        Me.CmdCargar.Name = "CmdCargar"
-        Me.CmdCargar.Size = New System.Drawing.Size(81, 37)
-        Me.CmdCargar.TabIndex = 13
-        Me.CmdCargar.Text = "Cargar Superficies"
-        Me.CmdCargar.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(288, 76)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(41, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Lado B"
         '
-        'TxtC
+        'Label3
         '
-        Me.TxtC.Location = New System.Drawing.Point(134, 129)
-        Me.TxtC.Name = "TxtC"
-        Me.TxtC.Size = New System.Drawing.Size(100, 20)
-        Me.TxtC.TabIndex = 12
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(288, 110)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(41, 13)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Lado C"
         '
-        'TxtB
+        'txtLadoA
         '
-        Me.TxtB.Location = New System.Drawing.Point(134, 103)
-        Me.TxtB.Name = "TxtB"
-        Me.TxtB.Size = New System.Drawing.Size(100, 20)
-        Me.TxtB.TabIndex = 11
+        Me.txtLadoA.Location = New System.Drawing.Point(386, 28)
+        Me.txtLadoA.Name = "txtLadoA"
+        Me.txtLadoA.Size = New System.Drawing.Size(100, 20)
+        Me.txtLadoA.TabIndex = 4
         '
-        'TxtA
+        'txtLadoB
         '
-        Me.TxtA.Location = New System.Drawing.Point(134, 77)
-        Me.TxtA.Name = "TxtA"
-        Me.TxtA.Size = New System.Drawing.Size(100, 20)
-        Me.TxtA.TabIndex = 10
+        Me.txtLadoB.Location = New System.Drawing.Point(386, 69)
+        Me.txtLadoB.Name = "txtLadoB"
+        Me.txtLadoB.Size = New System.Drawing.Size(100, 20)
+        Me.txtLadoB.TabIndex = 5
         '
-        'CmdMostrar
+        'txtLadoC
         '
-        Me.CmdMostrar.Location = New System.Drawing.Point(34, 192)
-        Me.CmdMostrar.Name = "CmdMostrar"
-        Me.CmdMostrar.Size = New System.Drawing.Size(75, 37)
-        Me.CmdMostrar.TabIndex = 9
-        Me.CmdMostrar.Text = "Mostrar Area Y Perimetro"
-        Me.CmdMostrar.UseVisualStyleBackColor = True
+        Me.txtLadoC.Location = New System.Drawing.Point(386, 107)
+        Me.txtLadoC.Name = "txtLadoC"
+        Me.txtLadoC.Size = New System.Drawing.Size(100, 20)
+        Me.txtLadoC.TabIndex = 6
+        '
+        'btnTriangulo
+        '
+        Me.btnTriangulo.Location = New System.Drawing.Point(323, 179)
+        Me.btnTriangulo.Name = "btnTriangulo"
+        Me.btnTriangulo.Size = New System.Drawing.Size(163, 23)
+        Me.btnTriangulo.TabIndex = 8
+        Me.btnTriangulo.Text = " Area y Perimetro del Triangulo"
+        Me.btnTriangulo.UseVisualStyleBackColor = True
+        '
+        'btnFiguras
+        '
+        Me.btnFiguras.Location = New System.Drawing.Point(62, 179)
+        Me.btnFiguras.Name = "btnFiguras"
+        Me.btnFiguras.Size = New System.Drawing.Size(163, 23)
+        Me.btnFiguras.TabIndex = 7
+        Me.btnFiguras.Text = "Area y Perimetros de la Fifuras"
+        Me.btnFiguras.UseVisualStyleBackColor = True
+        '
+        'txtAltura
+        '
+        Me.txtAltura.Location = New System.Drawing.Point(125, 107)
+        Me.txtAltura.Name = "txtAltura"
+        Me.txtAltura.Size = New System.Drawing.Size(100, 20)
+        Me.txtAltura.TabIndex = 3
+        '
+        'txtBase
+        '
+        Me.txtBase.Location = New System.Drawing.Point(125, 69)
+        Me.txtBase.Name = "txtBase"
+        Me.txtBase.Size = New System.Drawing.Size(100, 20)
+        Me.txtBase.TabIndex = 2
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(27, 110)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(34, 13)
+        Me.Label4.TabIndex = 16
+        Me.Label4.Text = "Altura"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(27, 76)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(31, 13)
+        Me.Label5.TabIndex = 15
+        Me.Label5.Text = "Base"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(27, 35)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(31, 13)
+        Me.Label6.TabIndex = 20
+        Me.Label6.Text = "Lado"
+        '
+        'txtLado
+        '
+        Me.txtLado.Location = New System.Drawing.Point(125, 28)
+        Me.txtLado.Name = "txtLado"
+        Me.txtLado.Size = New System.Drawing.Size(100, 20)
+        Me.txtLado.TabIndex = 1
+        '
+        'btnRegistros
+        '
+        Me.btnRegistros.Location = New System.Drawing.Point(62, 233)
+        Me.btnRegistros.Name = "btnRegistros"
+        Me.btnRegistros.Size = New System.Drawing.Size(163, 23)
+        Me.btnRegistros.TabIndex = 21
+        Me.btnRegistros.Text = "Ver Registros"
+        Me.btnRegistros.UseVisualStyleBackColor = True
+        '
+        'btnSalir
+        '
+        Me.btnSalir.Location = New System.Drawing.Point(323, 233)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(163, 23)
+        Me.btnSalir.TabIndex = 22
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(280, 261)
+        Me.ClientSize = New System.Drawing.Size(517, 286)
+        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.btnRegistros)
+        Me.Controls.Add(Me.txtLado)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.txtAltura)
+        Me.Controls.Add(Me.txtBase)
         Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.btnFiguras)
+        Me.Controls.Add(Me.btnTriangulo)
+        Me.Controls.Add(Me.txtLadoC)
+        Me.Controls.Add(Me.txtLadoB)
+        Me.Controls.Add(Me.txtLadoA)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.CmdCargar)
-        Me.Controls.Add(Me.TxtC)
-        Me.Controls.Add(Me.TxtB)
-        Me.Controls.Add(Me.TxtA)
-        Me.Controls.Add(Me.CmdMostrar)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents CmdCargar As Button
-    Friend WithEvents TxtC As TextBox
-    Friend WithEvents TxtB As TextBox
-    Friend WithEvents TxtA As TextBox
-    Friend WithEvents CmdMostrar As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtLadoA As TextBox
+    Friend WithEvents txtLadoB As TextBox
+    Friend WithEvents txtLadoC As TextBox
+    Friend WithEvents btnTriangulo As Button
+    Friend WithEvents btnFiguras As Button
+    Friend WithEvents txtAltura As TextBox
+    Friend WithEvents txtBase As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents txtLado As TextBox
+    Friend WithEvents btnRegistros As Button
+    Friend WithEvents btnSalir As Button
 End Class
