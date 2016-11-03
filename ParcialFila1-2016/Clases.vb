@@ -31,7 +31,7 @@ Public Class Rectangulo
     End Function
 
     Public Overrides Function Area() As Double
-        Return (Base * Altura) / 2
+        Return (Base * Altura)
     End Function
 
 End Class
