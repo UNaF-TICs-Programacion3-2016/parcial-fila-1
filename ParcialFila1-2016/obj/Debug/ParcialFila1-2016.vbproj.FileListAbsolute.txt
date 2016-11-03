@@ -1,2 +1,15 @@
 d:\heber\documents\visual studio 2012\Projects\ParcialFila1-2016\ParcialFila1-2016\bin\Debug\ParcialFila1-2016.exe.config
-C:\Users\Joel Britez\Source\Repos\parcial-fila-1\ParcialFila1-2016\bin\Debug\ParcialFila1-2016.exe.config
+C:\Users\CaroL\Desktop\parcial-fila-1-master\ParcialFila1-2016\bin\Debug\ParcialFila1-2016.exe.config
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\bin\Debug\ParcialFila1-2016.exe.config
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\bin\Debug\ParcialFila1-2016.exe
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\bin\Debug\ParcialFila1-2016.pdb
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\bin\Debug\ParcialFila1-2016.xml
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\bin\Debug\Oracle.DataAccess.dll
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\Debug\ParcialFila1-2016.vbprojResolveAssemblyReference.cache
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\Debug\ParcialFila1_2016.Form1.resources
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\Debug\ParcialFila1_2016.Form2.resources
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\Debug\ParcialFila1_2016.Resources.resources
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\Debug\ParcialFila1-2016.vbproj.GenerateResource.Cache
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\Debug\ParcialFila1-2016.exe
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\Debug\ParcialFila1-2016.xml
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\Debug\ParcialFila1-2016.pdb

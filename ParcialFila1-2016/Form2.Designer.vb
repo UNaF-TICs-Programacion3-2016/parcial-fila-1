@@ -22,24 +22,24 @@ Partial Class Form2
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DGVInmueble = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGVInmueble, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'DGVInmueble
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 59)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(812, 319)
-        Me.DataGridView1.TabIndex = 0
+        Me.DGVInmueble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVInmueble.Location = New System.Drawing.Point(12, 59)
+        Me.DGVInmueble.Name = "DGVInmueble"
+        Me.DGVInmueble.Size = New System.Drawing.Size(958, 319)
+        Me.DGVInmueble.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(354, 20)
+        Me.Label1.Location = New System.Drawing.Point(415, 20)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(126, 24)
         Me.Label1.TabIndex = 1
@@ -49,16 +49,17 @@ Partial Class Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(836, 390)
+        Me.ClientSize = New System.Drawing.Size(983, 390)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DGVInmueble)
         Me.Name = "Form2"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGVInmueble, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents DGVInmueble As System.Windows.Forms.DataGridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
