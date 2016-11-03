@@ -31,7 +31,7 @@ Public Class Rectangulo
     End Function
 
     Public Overrides Function Area() As Double
-        Return (Base * Altura) / 2
+        Return (Base * Altura)
     End Function
 
 End Class
@@ -151,17 +151,11 @@ Public Class EntornoDB
         Dim Tabla As New DataTable
         Dim Adaptador As New OracleDataAdapter(SQL, Conexion)
 
-        Conectar()
-
         Adaptador.Fill(Inmueble, "inmueble")
-
-        Desconectar()
 
         Tabla = Inmueble.Tables("inmueble")
 
         Return Tabla
-
-
 
     End Function
 

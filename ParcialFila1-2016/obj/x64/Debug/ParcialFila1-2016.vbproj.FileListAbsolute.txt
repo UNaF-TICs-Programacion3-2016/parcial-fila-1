@@ -36,3 +36,4 @@ C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\x64\Debug\ParcialFila
 C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\x64\Debug\ParcialFila1_2016.Form2.resources
 C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\x64\Debug\ParcialFila1_2016.Resources.resources
 C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\x64\Debug\ParcialFila1-2016.vbproj.GenerateResource.Cache
+C:\Users\CaroL\Desktop\Repos Parcial\ParcialFila1-2016\obj\x64\Debug\ParcialFila1-2016.vbprojResolveAssemblyReference.cache
